@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C3B40B3421E72EDA006D7721 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3321E72EDA006D7721 /* main.c */; };
+		C3B40B3C21E72F4F006D7721 /* Array_gp.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3B21E72F4F006D7721 /* Array_gp.c */; };
+		C3B40B3F21E73023006D7721 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3E21E73023006D7721 /* array.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		C3B40B3021E72EDA006D7721 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B40B3321E72EDA006D7721 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C3B40B3A21E72F4F006D7721 /* Array_gp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array_gp.h; sourceTree = "<group>"; };
+		C3B40B3B21E72F4F006D7721 /* Array_gp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Array_gp.c; sourceTree = "<group>"; };
+		C3B40B3D21E73023006D7721 /* array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		C3B40B3E21E73023006D7721 /* array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C3B40B3321E72EDA006D7721 /* main.c */,
+				C3B40B3A21E72F4F006D7721 /* Array_gp.h */,
+				C3B40B3B21E72F4F006D7721 /* Array_gp.c */,
+				C3B40B3D21E73023006D7721 /* array.h */,
+				C3B40B3E21E73023006D7721 /* array.c */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B40B3F21E73023006D7721 /* array.c in Sources */,
+				C3B40B3C21E72F4F006D7721 /* Array_gp.c in Sources */,
 				C3B40B3421E72EDA006D7721 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
