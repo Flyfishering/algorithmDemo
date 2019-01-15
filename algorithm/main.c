@@ -9,9 +9,11 @@
 #include <stdio.h>
 //#include "array.h"
 #include "Array_gp.h"
+#include "merge_sort.h"
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
 //    testArr();
-    testFunctionArray();
+//    testFunctionArray();
+    merge_sort_test();
     return 0;
 }
