@@ -42,7 +42,7 @@ Array* arrayCreate();
 void arrayInit(Array *array, int size, int typeSize);
 // 插入
 int arrayInsert(Array *array, size_t pos, void *const value);
-// 查找
+// 查找元素
 size_t arraySearchValue(Array *array, void* const value);
 // 
 void* arrayIndex(Array *array, size_t index);
@@ -54,4 +54,6 @@ size_t arraySize(Array *array);
 void arrayEmpty(Array *array);
 void arrayDelValue(Array *array, void *value);
 void arrayDelIndex(Array *array, size_t pos);
+
+int testFunctionArray();
 #endif /* Array_gp_h */

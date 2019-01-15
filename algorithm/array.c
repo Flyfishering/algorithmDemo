@@ -15,7 +15,7 @@ struct array {
     int used;
     int *arr;
 };
-
+// 打印数组
 void dump(struct array *array)
 {
     int idx;
@@ -23,12 +23,12 @@ void dump(struct array *array)
     for (idx = 0; idx < array->used; idx++)
         printf("[%02d]: %08d\n", idx, array->arr[idx]);
 }
-
+// 初始化数组
 void alloc(struct array *array)
 {
     array->arr = (int *)malloc(array->size * sizeof(int));
 }
-
+// 插入并排序
 int insert(struct array *array, int elem)
 {
     int idx;
@@ -48,7 +48,7 @@ int insert(struct array *array, int elem)
     array->used++;
     return idx;
 }
-
+// 删除元素
 int delete(struct array *array, int idx)
 {
     if (idx < 0 || idx >= array->used)
@@ -59,7 +59,7 @@ int delete(struct array *array, int idx)
     array->used--;
     return 0;
 }
-
+// 查找 元素
 int search(struct array *array, int elem)
 {
     int idx;

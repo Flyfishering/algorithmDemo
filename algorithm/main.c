@@ -7,9 +7,11 @@
 //
 
 #include <stdio.h>
-#include "array.h"
+//#include "array.h"
+#include "Array_gp.h"
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
-    testArr();
+//    testArr();
+    testFunctionArray();
     return 0;
 }
