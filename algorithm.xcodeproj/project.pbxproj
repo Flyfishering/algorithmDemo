@@ -12,6 +12,7 @@
 		C346698121EDD6070018E57C /* merge_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698021EDD6070018E57C /* merge_sort.c */; };
 		C346698421EF101E0018E57C /* quick_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698321EF101E0018E57C /* quick_sort.c */; };
 		C346698721EF2C660018E57C /* count_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698621EF2C660018E57C /* count_sort.c */; };
+		C346698A21EF325B0018E57C /* radix_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698921EF325B0018E57C /* radix_sort.c */; };
 		C3B40B3421E72EDA006D7721 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3321E72EDA006D7721 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		C346698321EF101E0018E57C /* quick_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_sort.c; sourceTree = "<group>"; };
 		C346698521EF2C660018E57C /* count_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = count_sort.h; sourceTree = "<group>"; };
 		C346698621EF2C660018E57C /* count_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = count_sort.c; sourceTree = "<group>"; };
+		C346698821EF325B0018E57C /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
+		C346698921EF325B0018E57C /* radix_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = radix_sort.c; sourceTree = "<group>"; };
 		C3B40B3021E72EDA006D7721 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B40B3321E72EDA006D7721 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +76,8 @@
 				C346698321EF101E0018E57C /* quick_sort.c */,
 				C346698521EF2C660018E57C /* count_sort.h */,
 				C346698621EF2C660018E57C /* count_sort.c */,
+				C346698821EF325B0018E57C /* radix_sort.h */,
+				C346698921EF325B0018E57C /* radix_sort.c */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C346698421EF101E0018E57C /* quick_sort.c in Sources */,
+				C346698A21EF325B0018E57C /* radix_sort.c in Sources */,
 				C346698121EDD6070018E57C /* merge_sort.c in Sources */,
 				C3B40B3421E72EDA006D7721 /* main.c in Sources */,
 				C346698721EF2C660018E57C /* count_sort.c in Sources */,

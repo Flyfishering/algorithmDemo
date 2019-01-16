@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
     // 快排
 //    quick_sort_test();
     //计数排序  即桶排序
-    count_sort_test();
+//    count_sort_test();
+    // 基数排序
+    radix_sort_test();
     return 0;
 }
