@@ -14,6 +14,8 @@ int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
 //    testArr();
 //    testFunctionArray();
-    merge_sort_test();
+//    merge_sort_test();
+    // 快排
+    quick_sort_test();
     return 0;
 }

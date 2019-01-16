@@ -10,6 +10,7 @@
 		C346697C21EDD5E20018E57C /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = C346697821EDD5E20018E57C /* array.c */; };
 		C346697D21EDD5E20018E57C /* Array_gp.c in Sources */ = {isa = PBXBuildFile; fileRef = C346697A21EDD5E20018E57C /* Array_gp.c */; };
 		C346698121EDD6070018E57C /* merge_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698021EDD6070018E57C /* merge_sort.c */; };
+		C346698421EF101E0018E57C /* quick_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698321EF101E0018E57C /* quick_sort.c */; };
 		C3B40B3421E72EDA006D7721 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3321E72EDA006D7721 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		C346697B21EDD5E20018E57C /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
 		C346697F21EDD6070018E57C /* merge_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = merge_sort.h; sourceTree = "<group>"; };
 		C346698021EDD6070018E57C /* merge_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = merge_sort.c; sourceTree = "<group>"; };
+		C346698221EF101E0018E57C /* quick_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_sort.h; sourceTree = "<group>"; };
+		C346698321EF101E0018E57C /* quick_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_sort.c; sourceTree = "<group>"; };
 		C3B40B3021E72EDA006D7721 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B40B3321E72EDA006D7721 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 			children = (
 				C346697F21EDD6070018E57C /* merge_sort.h */,
 				C346698021EDD6070018E57C /* merge_sort.c */,
+				C346698221EF101E0018E57C /* quick_sort.h */,
+				C346698321EF101E0018E57C /* quick_sort.c */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C346698421EF101E0018E57C /* quick_sort.c in Sources */,
 				C346698121EDD6070018E57C /* merge_sort.c in Sources */,
 				C3B40B3421E72EDA006D7721 /* main.c in Sources */,
 				C346697C21EDD5E20018E57C /* array.c in Sources */,
