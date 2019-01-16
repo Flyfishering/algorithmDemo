@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C346697C21EDD5E20018E57C /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = C346697821EDD5E20018E57C /* array.c */; };
-		C346697D21EDD5E20018E57C /* Array_gp.c in Sources */ = {isa = PBXBuildFile; fileRef = C346697A21EDD5E20018E57C /* Array_gp.c */; };
+		409A35AA21EDFCD20053D520 /* merge_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 409A35A321EDFCD20053D520 /* merge_sort.c */; };
+		409A35AB21EDFCD20053D520 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 409A35A621EDFCD20053D520 /* array.c */; };
+		409A35AC21EDFCD20053D520 /* Array_gp.c in Sources */ = {isa = PBXBuildFile; fileRef = 409A35A821EDFCD20053D520 /* Array_gp.c */; };
 		C346698121EDD6070018E57C /* merge_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698021EDD6070018E57C /* merge_sort.c */; };
 		C346698421EF101E0018E57C /* quick_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698321EF101E0018E57C /* quick_sort.c */; };
 		C3B40B3421E72EDA006D7721 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3321E72EDA006D7721 /* main.c */; };
@@ -27,10 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C346697821EDD5E20018E57C /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
-		C346697921EDD5E20018E57C /* Array_gp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array_gp.h; sourceTree = "<group>"; };
-		C346697A21EDD5E20018E57C /* Array_gp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Array_gp.c; sourceTree = "<group>"; };
-		C346697B21EDD5E20018E57C /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		409A35A321EDFCD20053D520 /* merge_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = merge_sort.c; sourceTree = "<group>"; };
+		409A35A421EDFCD20053D520 /* merge_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = merge_sort.h; sourceTree = "<group>"; };
+		409A35A621EDFCD20053D520 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		409A35A721EDFCD20053D520 /* Array_gp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array_gp.h; sourceTree = "<group>"; };
+		409A35A821EDFCD20053D520 /* Array_gp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Array_gp.c; sourceTree = "<group>"; };
+		409A35A921EDFCD20053D520 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
 		C346697F21EDD6070018E57C /* merge_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = merge_sort.h; sourceTree = "<group>"; };
 		C346698021EDD6070018E57C /* merge_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = merge_sort.c; sourceTree = "<group>"; };
 		C346698221EF101E0018E57C /* quick_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_sort.h; sourceTree = "<group>"; };
@@ -50,13 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C346697721EDD5E20018E57C /* array */ = {
+		409A35A221EDFCD20053D520 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				C346697821EDD5E20018E57C /* array.c */,
-				C346697921EDD5E20018E57C /* Array_gp.h */,
-				C346697A21EDD5E20018E57C /* Array_gp.c */,
-				C346697B21EDD5E20018E57C /* array.h */,
+				409A35A321EDFCD20053D520 /* merge_sort.c */,
+				409A35A421EDFCD20053D520 /* merge_sort.h */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		409A35A521EDFCD20053D520 /* array */ = {
+			isa = PBXGroup;
+			children = (
+				409A35A621EDFCD20053D520 /* array.c */,
+				409A35A721EDFCD20053D520 /* Array_gp.h */,
+				409A35A821EDFCD20053D520 /* Array_gp.c */,
+				409A35A921EDFCD20053D520 /* array.h */,
 			);
 			path = array;
 			sourceTree = "<group>";
@@ -91,8 +103,9 @@
 		C3B40B3221E72EDA006D7721 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				409A35A521EDFCD20053D520 /* array */,
 				C346697E21EDD5F80018E57C /* Sort */,
-				C346697721EDD5E20018E57C /* array */,
+				409A35A221EDFCD20053D520 /* Sort */,
 				C3B40B3321E72EDA006D7721 /* main.c */,
 			);
 			path = algorithm;
@@ -156,9 +169,10 @@
 			files = (
 				C346698421EF101E0018E57C /* quick_sort.c in Sources */,
 				C346698121EDD6070018E57C /* merge_sort.c in Sources */,
+				409A35AA21EDFCD20053D520 /* merge_sort.c in Sources */,
 				C3B40B3421E72EDA006D7721 /* main.c in Sources */,
-				C346697C21EDD5E20018E57C /* array.c in Sources */,
-				C346697D21EDD5E20018E57C /* Array_gp.c in Sources */,
+				409A35AB21EDFCD20053D520 /* array.c in Sources */,
+				409A35AC21EDFCD20053D520 /* Array_gp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,7 @@ Array* arrayCreate()
     return array;
 }
 
+// 初始化 数组
 void arrayInit(Array *array, int size, int typeSize)
 {
     if (NULL == array
@@ -59,6 +60,7 @@ int arrayInsert(Array *array, size_t pos, void *const value)
 {
     // 异常处理
     if (NULL == array) // 数组为空
+// 数组插入数据
     {
         return -1;
     }
@@ -73,6 +75,7 @@ int arrayInsert(Array *array, size_t pos, void *const value)
         return -3;
     }
     // 拿到数组起始指针地址
+
     char *pBegin = array->p;
     for (size_t i = array->len; i > pos - 1; --i)
     {
@@ -305,7 +308,6 @@ int testFunctionArray()
     arrayInit(array, 8, 8);
     int num1 = 100;
     const int *a = &num1;
-
     arrayInsert(array, 1, a);
     dumpArr(array);
     return 0;
