@@ -21,12 +21,9 @@ void __merge(int *arr, int p, int q, int r)
 {
     int *tmp;
     int i, j, k;
-    
     tmp = (int*)malloc((r - p + 1) * sizeof(int));
-    
     if (!tmp)
         abort();
-    
     for (i = p, j = q + 1, k = 0; i <= q && j <= r;) {
         if (arr[i] <= arr[j])
             tmp[k++] = arr[i++];
