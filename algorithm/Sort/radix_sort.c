@@ -49,7 +49,7 @@ void radix_sort(int a[],int size,int num_count)
         /*求当前的基数*/
         pval = pow(10,i);
         
-        /*计数*/ 
+        /*计数*/
         for (j = 0; j < size; j++)
         {
             index = NUM_OF_POS(a[j],pval);
