@@ -10,5 +10,6 @@
 #define selection_sort_h
 
 #include <stdio.h>
-
+/// 选择排序
+void selection_sort_test();
 #endif /* selection_sort_h */

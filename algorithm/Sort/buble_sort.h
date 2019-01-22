@@ -10,5 +10,6 @@
 #define buble_sort_h
 
 #include <stdio.h>
-
+/// 冒泡排序
+void bubble_sort_test();
 #endif /* buble_sort_h */

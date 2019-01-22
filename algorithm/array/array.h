@@ -10,6 +10,14 @@
 #define array_h
 
 #include <stdio.h>
-
-#endif /* array_h */
+struct array {
+    int size;
+    int used;
+    int *arr;
+};
+void alloc(struct array *array);
+// 打印数组
+void dump(struct array *array);
 int testArr();
+#endif /* array_h */
+

@@ -10,5 +10,6 @@
 #define insertion_sort_h
 
 #include <stdio.h>
-
+/// 插入排序
+void insertion_sort_test();
 #endif /* insertion_sort_h */

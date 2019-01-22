@@ -10,11 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct array {
-    int size;
-    int used;
-    int *arr;
-};
+
 // 打印数组
 void dump(struct array *array)
 {

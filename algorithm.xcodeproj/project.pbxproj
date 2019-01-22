@@ -14,6 +14,10 @@
 		C346698721EF2C660018E57C /* count_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698621EF2C660018E57C /* count_sort.c */; };
 		C346698A21EF325B0018E57C /* radix_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C346698921EF325B0018E57C /* radix_sort.c */; };
 		C3B40B3421E72EDA006D7721 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C3B40B3321E72EDA006D7721 /* main.c */; };
+		C3F87EB221F568E400012BA8 /* buble_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C3F87EB121F568E400012BA8 /* buble_sort.c */; };
+		C3F87EB521F5691300012BA8 /* insertion_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C3F87EB421F5691300012BA8 /* insertion_sort.c */; };
+		C3F87EB821F5693600012BA8 /* selection_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C3F87EB721F5693600012BA8 /* selection_sort.c */; };
+		C3F87EBB21F569B300012BA8 /* sort_base.c in Sources */ = {isa = PBXBuildFile; fileRef = C3F87EBA21F569B300012BA8 /* sort_base.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +47,14 @@
 		C346698921EF325B0018E57C /* radix_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = radix_sort.c; sourceTree = "<group>"; };
 		C3B40B3021E72EDA006D7721 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B40B3321E72EDA006D7721 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C3F87EB021F568E400012BA8 /* buble_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = buble_sort.h; sourceTree = "<group>"; };
+		C3F87EB121F568E400012BA8 /* buble_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = buble_sort.c; sourceTree = "<group>"; };
+		C3F87EB321F5691300012BA8 /* insertion_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insertion_sort.h; sourceTree = "<group>"; };
+		C3F87EB421F5691300012BA8 /* insertion_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = insertion_sort.c; sourceTree = "<group>"; };
+		C3F87EB621F5693600012BA8 /* selection_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selection_sort.h; sourceTree = "<group>"; };
+		C3F87EB721F5693600012BA8 /* selection_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = selection_sort.c; sourceTree = "<group>"; };
+		C3F87EB921F569B300012BA8 /* sort_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sort_base.h; sourceTree = "<group>"; };
+		C3F87EBA21F569B300012BA8 /* sort_base.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sort_base.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +71,10 @@
 		409A35A521EDFCD20053D520 /* array */ = {
 			isa = PBXGroup;
 			children = (
+				409A35A921EDFCD20053D520 /* array.h */,
 				409A35A621EDFCD20053D520 /* array.c */,
 				409A35A721EDFCD20053D520 /* Array_gp.h */,
 				409A35A821EDFCD20053D520 /* Array_gp.c */,
-				409A35A921EDFCD20053D520 /* array.h */,
 			);
 			path = array;
 			sourceTree = "<group>";
@@ -70,6 +82,14 @@
 		C346697E21EDD5F80018E57C /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				C3F87EB921F569B300012BA8 /* sort_base.h */,
+				C3F87EBA21F569B300012BA8 /* sort_base.c */,
+				C3F87EB021F568E400012BA8 /* buble_sort.h */,
+				C3F87EB121F568E400012BA8 /* buble_sort.c */,
+				C3F87EB321F5691300012BA8 /* insertion_sort.h */,
+				C3F87EB421F5691300012BA8 /* insertion_sort.c */,
+				C3F87EB621F5693600012BA8 /* selection_sort.h */,
+				C3F87EB721F5693600012BA8 /* selection_sort.c */,
 				C346697F21EDD6070018E57C /* merge_sort.h */,
 				C346698021EDD6070018E57C /* merge_sort.c */,
 				C346698221EF101E0018E57C /* quick_sort.h */,
@@ -164,12 +184,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F87EB521F5691300012BA8 /* insertion_sort.c in Sources */,
 				C346698421EF101E0018E57C /* quick_sort.c in Sources */,
+				C3F87EB821F5693600012BA8 /* selection_sort.c in Sources */,
 				C346698A21EF325B0018E57C /* radix_sort.c in Sources */,
+				C3F87EBB21F569B300012BA8 /* sort_base.c in Sources */,
 				C346698121EDD6070018E57C /* merge_sort.c in Sources */,
 				C3B40B3421E72EDA006D7721 /* main.c in Sources */,
 				C346698721EF2C660018E57C /* count_sort.c in Sources */,
 				409A35AB21EDFCD20053D520 /* array.c in Sources */,
+				C3F87EB221F568E400012BA8 /* buble_sort.c in Sources */,
 				409A35AC21EDFCD20053D520 /* Array_gp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

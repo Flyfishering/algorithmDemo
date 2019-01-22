@@ -10,5 +10,6 @@
 #define sort_base_h
 
 #include <stdio.h>
+#include "array.h"
 
 #endif /* sort_base_h */
