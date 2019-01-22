@@ -15,6 +15,7 @@
 #include "merge_sort.h"
 #include "binary_search.h"
 #include "cosa_sina.h"
+#include "mybsearch.h"
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
 //    testArr();
@@ -34,8 +35,11 @@ int main(int argc, const char * argv[]) {
     // 基数排序
 //    radix_sort_test();
     // 二分查找
-    binary_search_test();
+//    binary_search_test();
     // 求平方根
 //    cosa_sina_test();
+
+    // 二分查找 变体
+    mybsearch_test();
     return 0;
 }
