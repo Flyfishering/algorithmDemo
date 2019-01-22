@@ -13,12 +13,14 @@
 #include "insertion_sort.h"
 #include "selection_sort.h"
 #include "merge_sort.h"
+#include "binary_search.h"
+#include "cosa_sina.h"
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
 //    testArr();
 //    testFunctionArray();
     // 冒泡排序
-    bubble_sort_test();
+//    bubble_sort_test();
     // 插入排序
 //    insertion_sort_test();
     // 选择排序
@@ -31,5 +33,9 @@ int main(int argc, const char * argv[]) {
 //    count_sort_test();
     // 基数排序
 //    radix_sort_test();
+    // 二分查找
+    binary_search_test();
+    // 求平方根
+//    cosa_sina_test();
     return 0;
 }
