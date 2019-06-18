@@ -11,5 +11,13 @@
 
 #include <stdio.h>
 
+struct array {
+    int size; // 数组的总容量
+    int used; // 数组中已经占用的容量
+    int *arr;// 数组的头地址
+};
+void alloc(struct array *array);
+// 打印数组
+void dump(struct array *array);
+int testArr();
 #endif /* array_h */
-int testArr(void);

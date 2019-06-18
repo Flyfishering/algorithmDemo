@@ -10,11 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct array {
-    int size; // 数组的总容量
-    int used; // 数组中已经占用的容量
-    int *arr;// 数组的头地址
-};
+
 // 打印整个数组
 void dump(struct array *array)
 {
