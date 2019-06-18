@@ -11,11 +11,11 @@
 #include <string.h>
 
 struct array {
-    int size;
-    int used;
-    int *arr;
+    int size; // 数组的总容量
+    int used; // 数组中已经占用的容量
+    int *arr;// 数组的头地址
 };
-// 打印数组
+// 打印整个数组
 void dump(struct array *array)
 {
     int idx;
@@ -23,43 +23,46 @@ void dump(struct array *array)
     for (idx = 0; idx < array->used; idx++)
         printf("[%02d]: %08d\n", idx, array->arr[idx]);
 }
-// 初始化数组
+// 初始化 数组
 void alloc(struct array *array)
 {
     array->arr = (int *)malloc(array->size * sizeof(int));
 }
-// 插入并排序
+// 数组中插入元素
 int insert(struct array *array, int elem)
 {
     int idx;
+    // 数组满载 退出
     if (array->used >= array->size)
         return -1;
-    
+    // 找到比 elem 大的位置
     for (idx = 0; idx < array->used; idx++) {
         if (array->arr[idx] > elem)
             break;
     }
-    
+    // 将 idx 到 used 之间的元素依次往后移一位
     if (idx < array->used)
         memmove(&array->arr[idx+1], &array->arr[idx],
                 (array->used - idx) * sizeof(int));
-    
+    // 将 elem 插入到 idx 位置
     array->arr[idx] = elem;
+    // 数组已使用大小 used + 1
     array->used++;
     return idx;
 }
 // 删除元素
 int delete(struct array *array, int idx)
 {
+    // 判断 idx 是否是非法
     if (idx < 0 || idx >= array->used)
         return -1;
-    
+    // 将 idx+1 后面所有的内容依次向前移动一位
     memmove(&array->arr[idx], &array->arr[idx+1],
             (array->used - idx) * sizeof(int));
     array->used--;
     return 0;
 }
-// 查找 元素
+// 查找 elem 的位置
 int search(struct array *array, int elem)
 {
     int idx;

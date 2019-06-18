@@ -12,4 +12,4 @@
 #include <stdio.h>
 
 #endif /* array_h */
-int testArr();
+int testArr(void);
