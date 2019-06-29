@@ -16,9 +16,12 @@
 #include "binary_search.h"
 #include "cosa_sina.h"
 #include "mybsearch.h"
+#include "Dlist.h"
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
+    
 //    testArr();
+    testFunctionArray();
 //    testFunctionArray();
     // 冒泡排序
 //    bubble_sort_test();
@@ -40,6 +43,8 @@ int main(int argc, const char * argv[]) {
 //    cosa_sina_test();
 
     // 二分查找 变体
-    mybsearch_test();
+//    mybsearch_test();
+    
+    
     return 0;
 }

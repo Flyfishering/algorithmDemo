@@ -300,14 +300,25 @@ void dumpArr(struct Array *array)
     }
     
 }
-
+struct single_list {
+    // 指向下一个 链表单元的地址
+    struct single_list *next;
+    int val;
+};
 
 int testFunctionArray()
 {
+    struct single_list pseudo_head;
+    
+    
+    
     Array *array = arrayCreate();
     arrayInit(array, 8, 8);
     int num1 = 100;
     const int *a = &num1;
+    arrayInsert(array, 1, a);
+    int num2 = 200;
+    const int *b = &num2;
     arrayInsert(array, 1, a);
     dumpArr(array);
     return 0;
